@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            header{
+                background-color:#586A6A;
+                padding:15px;
+                color: white;
+                text-align: center;
+                font-size: 24px;
+                font-family: 'Pacifico', cursive;
+            }
+            main {
+                flex-grow: 1;
+            }
+            .login-box-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                background: url('./images/login-background.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+            .login-box{
+                border: 1px solid grey;
+                width: 500px;
+                padding: 20px;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 5px;
+            }
+            input[type=text] {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .primary-button {
+                color: white;
+                background-color: lightgreen;
+                border: none;
+                padding: 10px 20px;
+            }
+            .login-button {
+                margin: auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Chatter</div>
+        </header>
+        <main>
+            <div class="login-box-container">
+              <div class="login-box">
+                  <form>
+                     <input type="text" placeholder="username">
+                     <input type="text" placeholder="password">
+                     <button type="submit" class="primary-button login-button">Login</button>
+                   </form>
+                   <a href="#">Register Now</a>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
