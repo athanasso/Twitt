@@ -95,3 +95,20 @@ input[type=text], input[type=password], input[type=email] {
     flex-grow: 1;
     padding: 20px;
 }   
+
+/* Twitts*/
+.twitt {
+    display: flex;
+}
+.twitt .profile-pic {
+    font-size: 50px;
+    margin-right: 20px;
+}
+.twitt p {
+    margin-top: 0;
+    font-size: 18px;
+}
+.twitt .metadata {
+    font-size: 14px;
+    color: grey;
+}
