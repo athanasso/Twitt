@@ -26,6 +26,14 @@ input[type=text], input[type=password], input[type=email] {
     width: 100%;
     margin-bottom: 10px;
 }
+.primary-button {
+    color: white;
+    background-color: #006D77;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 /*Login and register page*/
 .login-box-container {
     display: flex;
@@ -63,12 +71,6 @@ input[type=text], input[type=password], input[type=email] {
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-}
-.primary-button {
-    color: white;
-    background-color: #006D77;
-    border: none;
-    padding: 10px 20px;
 }
 .login-button {
     margin: auto;
@@ -111,4 +113,17 @@ input[type=text], input[type=password], input[type=email] {
 .twitt .metadata {
     font-size: 14px;
     color: grey;
+}
+
+/* new users*/
+.new-user {
+    display: flex;
+    align-items: center;
+}
+.new-user .profile-pic {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.new-user p {
+    margin: 0,0,20,0;
 }
