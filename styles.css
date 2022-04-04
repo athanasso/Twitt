@@ -1,3 +1,4 @@
+/*General*/
 body{
     margin: 0;
     display: flex;
@@ -14,15 +15,23 @@ header{
 }
 main {
     flex-grow: 1;
+    background: url('./images/login-background.jpg');
+    background-position: center;
+    background-size: cover;
 }
+input[type=text], input[type=password], input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*Login and register page*/
 .login-box-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: url('./images/login-background.jpg');
-    background-position: center;
-    background-size: cover;
 }
 .login-box{
     border: 1px solid grey;
@@ -45,9 +54,6 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: url('./images/login-background.jpg');
-    background-position: center;
-    background-size: cover;
 }
 .register-box{
     border: 1px solid grey;
@@ -57,13 +63,6 @@ main {
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-}
-input[type=text], input[type=password], input[type=email] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid grey;
-    width: 100%;
-    margin-bottom: 10px;
 }
 .primary-button {
     color: white;
@@ -75,3 +74,24 @@ input[type=text], input[type=password], input[type=email] {
     margin: auto;
     display: block;
 }
+/* Home page*/
+.home-main {
+    display: flex;
+    justify-content: center;
+}
+.timeline-container {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+.twitts-feed {
+    flex-grow: 4;
+    border-right: 1px solid lightgrey;
+}
+.recent-users-feed {
+    flex-grow: 1;
+    padding: 20px;
+}   
