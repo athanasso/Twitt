@@ -40,6 +40,24 @@ main {
     font-weight: bold;
     color: black;
 }
+.register-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: url('./images/login-background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.register-box{
+    border: 1px solid grey;
+    width: 400px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
 input[type=text], input[type=password], input[type=email] {
     padding: 10px;
     border-radius: 5px;
