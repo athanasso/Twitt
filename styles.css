@@ -1,21 +1,9 @@
 /*General*/
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-header{
-    background-color: black;
-    padding:15px;
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Pacifico', cursive;
-}
-header a {
-    color: white;
-    text-decoration: none;
 }
 main {
     flex-grow: 1;
@@ -37,12 +25,45 @@ input[type=text], input[type=password], input[type=email] {
     padding: 10px 20px;
     text-decoration: none;
 }
+.secondary-button {
+    background-color: #8f001a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
 .form-actions {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
 }
 
+/* Header*/
+header {
+    background-color: black;
+    padding:15px;
+    text-align: center;
+    min-height: 40px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header .logo {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    position: absolute;
+    left: calc(50% - 35px);
+}
+.header-actions {
+    float: right;
+    margin-top: 8px;
+}
+.header-actions .fa-solid {
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
 /*Login and register page*/
 .login-box-container {
     display: flex;
@@ -110,6 +131,14 @@ input[type=text], input[type=password], input[type=email] {
 /* Twitts*/
 .twitt {
     display: flex;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+.twitt:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .twitt .profile-pic {
     font-size: 50px;
@@ -150,4 +179,29 @@ input[type=text], input[type=password], input[type=email] {
 .post-container textarea {
     width: 100%;
     height: 120px;
+}
+/* profile page*/
+.profile-view {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-view .primary-button {
+    display: block;
+    margin-bottom: 20px;
+}
+.profile-main .user-profile-pic {
+    font-size: 200px;
+    color: white;
+    margin: 30px 0;
+}
+.profile-main .twitts-feed{
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    min-width: 500px;
 }
